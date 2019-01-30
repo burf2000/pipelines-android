@@ -13,12 +13,12 @@ steps:
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFiles: 'testresults.xml'
     tasks: 'assembleDebug'
     
-- task: Bash@3
-  inputs:
-    filePath: 'emulator.sh'
+# - task: Bash@3
+#   inputs:
+#     filePath: 'emulator.sh'
 
 - task: CopyFiles@2
   inputs:
